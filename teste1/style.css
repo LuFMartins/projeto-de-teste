@@ -7,10 +7,7 @@
 }
 
 body{
-  background-image: url('imagens/wallpaper004.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top left;
+
 }
 
 header{
@@ -26,6 +23,7 @@ header{
 header div{
   display: flex;
   flex-direction: column;
+  gap: 15px;
   align-items: center;
 }
 
@@ -62,12 +60,23 @@ nav a{
 }
 
 nav a:hover{
-  background-color: rgba(0, 0, 0, 0.158);
+  background-color: #deb76860;
+}
+
+@media (max-width: 1024px){
+  header{
+    flex-direction: column;
+  }
+  nav{
+    margin-top: 15px;
+  }
 }
 
 main{
-  margin: auto;
+  background-image: url('imagens/wallpaper004.jpg');
   background-size: cover;
+  background-attachment: fixed;
+  background-position: top left;
 }
 
 .fundo-com-imagem{
@@ -85,6 +94,12 @@ main{
   margin: auto;
   display: flex;
   max-width: 1024px;
+}
+
+@media (max-width: 1024px){
+  .geral{
+    flex-direction: column;
+  }
 }
 
 .conteudo{
@@ -110,14 +125,12 @@ main{
 .conteudo img{
   display: block;
   width: 100%;
-  min-width: 500px;
   margin: auto;
   margin-bottom: 60px;
   box-shadow: 0px 0px 15px 0px black;
 }
 
 .links{
-  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,6 +139,12 @@ main{
   margin: 30px 30px 30px 30px;
   height: max-content;
   border-radius: 12px;
+}
+
+@media (max-width: 1024px){
+  .links{
+    flex-direction: row;
+  }
 }
 
 .links a{
