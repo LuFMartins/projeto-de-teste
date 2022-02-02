@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULANDO O SEU IMC</title>
+</head>
+<body>
+  <header>
+    <h1>CALCULANDO O SEU IMC</h1>
+  </header>
+  
+  <main>
+    <div class="bloco">
+      <p>Quanto você pesa? <input type="number" class="kg"></p>
+      <p>Qual é a sua altura? <input type="number" class="al"></p>
+      <div class="res"></div>
+      <input type="button" value="calcular" onclick="calcular()">
+    </div>
+  </main>
+
+  <script>
+    var peso = document.querySelector('input.kg');
+    var altura = document.querySelector('input.al');
+    var res = document.querySelector('div.res');
+    function calcular(){  
+      var imc = Number(peso.value/(altura.value**2));
+      res.innerHTML = imc;
+      if(imc.value < 18.5){
+
+      }
+    }
+  </script>
+</body>
+</html>
