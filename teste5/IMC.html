@@ -37,11 +37,11 @@
       } else if(imc >= 25 && imc <= 29.9){
         res.innerHTML = `RESULTADO: ${imc} <br> <strong>SOBREPESO</strong>`;
       } else if(imc >= 30 && imc <= 34.9){
-        res.innerHTML = `RESULTADO: ${imc} <br> <strong>OBESIDADE GRAU 1</strong>`;
+        res.innerHTML = `RESULTADO: ${imc} <br> <strong class='alerta'>OBESIDADE GRAU 1</strong>`;
       } else if(imc >= 35 && imc <= 39.9){
-        res.innerHTML = `RESULTADO: ${imc} <br> <strong>OBESIDADE GRAU 2</strong>`;
+        res.innerHTML = `RESULTADO: ${imc} <br> <strong class='alerta'>OBESIDADE GRAU 2</strong>`;
       } else if(imc > 40){
-        res.innerHTML = `RESULTADO: ${imc} <br> <strong>OBESIDADE GRAU 3</strong>`;
+        res.innerHTML = `RESULTADO: ${imc} <br> <strong class='alerta'>OBESIDADE GRAU 3</strong>`;
       }
     }
   </script>

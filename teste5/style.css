@@ -64,6 +64,10 @@ main h1{
   background-color: rgb(70, 70, 70);
 }
 
+.alerta{
+  color: red;
+}
+
 div.res{
   width: 300px;
 }
