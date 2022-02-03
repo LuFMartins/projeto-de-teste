@@ -3,17 +3,27 @@
   margin: 0px;
 }
 
+body{
+  background-image: url('../imagens/wallpaper004.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 main{
   font-family: 'Courier New', Courier, monospace;
   font-size: 15pt;
-}
-
-header{
   text-align: center;
 }
 
+main h1{
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .bloco{
-  background-color: darkgray;
+  background-color: rgba(0, 0, 0, 0.145);
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.583);
   color: black;
   margin: auto;
   padding: 30px;
@@ -37,15 +47,21 @@ header{
   width: 300px;
   height: 20px;
   text-align: center;
+  border-radius: 6px;
 }
 
 .botao{
+  border-radius: 6px;
   width: 300px;
   height: 30px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.289);
+  background-color: rgba(0, 0, 0, 0.501);
   color: white;
-  
+  text-transform: uppercase;
+}
+
+.botao:hover{
+  background-color: rgb(70, 70, 70);
 }
 
 div.res{

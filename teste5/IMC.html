@@ -8,14 +8,12 @@
   <title>CALCULANDO O SEU IMC</title>
 </head>
 <body>
-  <header>
-    <h1>CALCULANDO O SEU IMC</h1>
-  </header>
-  
   <main>
+    <h1>CALCULANDO O SEU IMC</h1>
+
     <div class="bloco">
       <div class="caixas">
-        <p>Quanto você pesa? <input type="number" class="kg"></p>
+        <p>Quanto você pesa?(kg) <input type="number" class="kg"></p>
         <p>Qual é a sua altura? <input type="number" class="al"></p>
       </div>
       <input type="button" value="calcular" onclick="calcular()" class="botao">
@@ -31,6 +29,7 @@
       var altura = document.querySelector('input.al');
       var res = document.querySelector('div.res');
       var imc = Number(peso.value/(altura.value**2)).toFixed(1);
+
       if(imc < 18.5){
         res.innerHTML = `RESULTADO: ${imc} <br> <strong>ABAIXO DO PESO</strong>`;
       } else if(imc >= 18.5 && imc <= 24.9){
@@ -41,7 +40,7 @@
         res.innerHTML = `RESULTADO: ${imc} <br> <strong>OBESIDADE GRAU 1</strong>`;
       } else if(imc >= 35 && imc <= 39.9){
         res.innerHTML = `RESULTADO: ${imc} <br> <strong>OBESIDADE GRAU 2</strong>`;
-      } else {
+      } else if(imc > 40){
         res.innerHTML = `RESULTADO: ${imc} <br> <strong>OBESIDADE GRAU 3</strong>`;
       }
     }
